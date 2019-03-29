@@ -18,7 +18,7 @@
                                 >
                                     <v-card elevation="9" flat tile class="d-flex">
                                         <v-img
-                                            :src="require(`@/assets/imgs/${item.id}.png`)"
+                                            :src="require(`../../../public/img/imgs/${item.id}.png`)"
                                             aspect-ratio="1"
                                             class="grey lighten-2"
                                         >

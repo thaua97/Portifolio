@@ -3,10 +3,10 @@
         <footer>
             <v-container fluid fill-height>
                 <v-layout wrap row justify-center align-center>
-                    <v-flex xs12 md3>
+                    <v-flex xs12 md3 text-xs-center>
                         <div class="logo">TB<span class="detail">.</span></div>
                     </v-flex>
-                    <v-flex xs12 md4>
+                    <v-flex xs12 md4 text-xs-center>
                         <div class="world">" we can't change the world unless we change ourselves "</div>
                         <v-divider vertical></v-divider>
                     </v-flex>

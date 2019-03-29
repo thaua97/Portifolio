@@ -29,7 +29,7 @@
                 <v-container fill-height>
                     <v-layout justify-center align-center wrap>
                         <v-flex xs12 md7>
-                           <v-img class="me" :src="require('@/assets/me.png')"></v-img>
+                           <img class="me" :src="require('../../../public/img/imgs/me.png')" />
                         </v-flex>
                          <v-flex xs12 md5>
                             <div class="custom--subtitle pr-5">Thauã</div>
@@ -47,7 +47,7 @@
                     <v-flex text-xs-center xs12>
                         <v-responsive>
                             <v-avatar size="150">
-                                <img src="../../assets/me.jpeg" alt="">
+                                <img src="../../../public/img/imgsme.jpeg" alt="">
                             </v-avatar>
                         </v-responsive>
                     </v-flex>
