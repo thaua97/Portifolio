@@ -47,7 +47,7 @@
                     <v-flex text-xs-center xs12>
                         <v-responsive>
                             <v-avatar size="150">
-                                <img src="../../../public/img/imgsme.jpeg" alt="">
+                                <img src="../../../public/img/imgs/me.jpeg" alt="">
                             </v-avatar>
                         </v-responsive>
                     </v-flex>
