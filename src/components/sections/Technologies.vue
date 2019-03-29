@@ -6,26 +6,23 @@
                     <v-flex xs12 md6>
                         <div class="title--tech hidden-sm-and-down">Tecnol
                             ogias</div>
-                        <div class="mb-title__tech hidde-md-and-up">Tecnol
+                        <div class="mb-title__tech hidden-md-and-up">Tecnol
                             ogias</div>
-                            <p class="text--tech text-xs-left pa-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p class="text--tech text-xs-left pa-4">Estas são as tecnologias que estou utilizando no momento.</p>
                     </v-flex>
                     <v-flex xs12 md6>
                         
                          <v-container grid-list-xl fluid>
                             <v-layout row wrap>
                                 <v-flex
-                                    v-for="n in 6"
-                                    :key="n"
+                                    v-for="item in tec"
+                                    :key="item.name"
                                     xs4
                                     d-flex
                                 >
-                                    <v-card elevation="9" flat tile class="d-flex">
                                         <v-img
-                                            :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-                                            :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
-                                            aspect-ratio="1"
-                                            class="grey lighten-2"
+                                            :src="require(`@/assets/tec/${item.id}.png`)"
+                                            height="100%"
                                         >
                                             <v-layout
                                                 slot="placeholder"
@@ -37,7 +34,7 @@
                                                 <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
                                             </v-layout>
                                         </v-img>
-                                    </v-card>
+
                                 </v-flex>
                             </v-layout>
                         </v-container>
@@ -49,7 +46,22 @@
 </template>
 <script>
 export default {
-    name: 'Technologies'
+    name: 'Technologies',
+    data () {
+        return {
+            tec: [
+                { id: 1, name: 'node.png' },
+                { id: 2, name: 'react.png' },
+                { id: 3, name: 'vue.png' },
+                { id: 4, name: 'vuetify.png' },
+                { id: 5, name: 'uikit.png' },
+                { id: 6, name: 'bootstrap.png' },
+                { id: 7, name: 'materialize.png' },
+                { id: 8, name: 'mysql.png' },
+                { id: 9, name: 'laravel.png' },
+            ]
+        }
+    }
 }
 </script>
 <style scoped>
@@ -73,6 +85,6 @@ export default {
     .text--tech {
         font-family: 'Nunito Sans', sans-serif;
         font-size: 2rem;
-        color: #a5a4a4;
+        color: #00b66d;
     }
 </style>

@@ -7,8 +7,9 @@
                         <div class="title--about hidden-sm-and-down">Sobre Mim</div>
                         <div class="mb--title__about hidden-md-and-up">Sobre Mim</div>
                     </v-flex>
-                    <v-flex xs12 md6>
-                        <p class="text--about text-xs-left pa-4">Meu nome é Thauã Borges, sou natural de Pelotas, Rio Grande do Sul. Comecei na area da programação atraves de um sonhe de criança, desenvolver meus proprios jogos, sonho esse que ainda não abandonei mas acabei decobrindo uma nova paixão, o desenvimento web e mobile.</p>
+                    <v-flex xs12 md6 pa-4>
+                        <p class="text--about green--text text-md-left pa-2.">Meu nome é Thauã Borges, sou natural de Pelotas, Rio Grande do Sul. Comecei na área da programação através de um sonho de criança, desenvolver meus próprios jogos, sonho esse que ainda não abandonei mas acabei descobrindo uma nova paixão na área, o desenvolvimento web mobile.</p>
+                        <p class="text--about green--text text-md-left pa-2">Atualmente estou cursando Análise e Desenvolvimento de Sistemas na Faculdade de Tecnologia SENAC no turno da noite mas procuro bastante conteúdo online.</p>
                     </v-flex>
                 </v-layout>
             </v-container>
@@ -40,6 +41,5 @@ export default {
     .text--about {
         font-family: 'Nunito Sans', sans-serif;
         font-size: 2rem;
-        color: #a5a4a4;
     }
 </style>

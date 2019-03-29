@@ -11,15 +11,14 @@
                        <v-container grid-list-xl fluid>
                             <v-layout row wrap>
                                 <v-flex
-                                    v-for="n in 3"
-                                    :key="n"
+                                    v-for="item in projetos"
+                                    :key="item.id"
                                     xs4
                                     d-flex
                                 >
                                     <v-card elevation="9" flat tile class="d-flex">
                                         <v-img
-                                            :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-                                            :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
+                                            :src="require(`@/assets/imgs/${item.id}.png`)"
                                             aspect-ratio="1"
                                             class="grey lighten-2"
                                         >
@@ -53,6 +52,24 @@
 <script>
 export default {
     name: 'Projects',
+    data () {
+        return {
+            projetos: [
+                {
+                    id: 1,
+                    link: ''
+                },
+                {
+                    id: 2,
+                    link: ''
+                },
+                {
+                    id: 3,
+                    link: ''
+                }
+            ]
+        }
+    }
 }
 </script>
 <style scoped>

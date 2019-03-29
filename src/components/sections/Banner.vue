@@ -3,13 +3,25 @@
         <header class="hidden-sm-and-down">
             <v-toolbar class="transparent elevation-0" absolute>
                 <v-toolbar-title>
-                    <div class="logo">TB<span class="light-blue--text">.</span></div>
+                    <div class="logo">TB<span class="green--text">.</span></div>
                 </v-toolbar-title>
                 <v-spacer></v-spacer>
                 <v-toolbar-items class="hidden-sm-and-down">
-                    <v-btn flat>sobre</v-btn>
-                    <v-btn flat>projetos</v-btn>
-                    <v-btn flat>tecnologias</v-btn>
+                   <v-btn large href="https://instagram.com/thaua97" target="_BLANK" icon>
+                        <v-icon large class="deep-purple--text">
+                            mdi-instagram
+                        </v-icon>
+                    </v-btn>
+                    <v-btn large href="https://github.com/thaua97" target="_BLANK" icon>
+                        <v-icon large class="deep-purple--text">
+                            mdi-github-circle
+                        </v-icon>
+                    </v-btn>
+                    <v-btn large href="https://open.spotify.com/user/chokkittoo" target="_BLANK" icon>
+                        <v-icon large class="deep-purple--text">
+                            mdi-spotify
+                        </v-icon>
+                    </v-btn>
                 </v-toolbar-items>
             </v-toolbar>
 
@@ -17,14 +29,12 @@
                 <v-container fill-height>
                     <v-layout justify-center align-center wrap>
                         <v-flex xs12 md7>
-                           <v-img class="me hidd" src="https://pmcvariety.files.wordpress.com/2017/09/jayz.png"></v-img>
-                           <v-img class="mb__me" src="https://pmcvariety.files.wordpress.com/2017/09/jayz.png"></v-img>
+                           <v-img class="me" :src="require('@/assets/me.png')"></v-img>
                         </v-flex>
                          <v-flex xs12 md5>
                             <div class="custom--subtitle pr-5">Thauã</div>
                             <div class="custom--title mt--1">Borges</div>
-                            <div class="custom--legend">Desenvolvedor FullSteck JR.</div>
-                            <v-btn large round class="white--text lake" >Veja mais sobre mim aqui</v-btn>
+                            <div class="custom--legend green--text">Desenvolvedor FullSteck</div>
                         </v-flex>
                     </v-layout>
                 </v-container>
@@ -37,12 +47,12 @@
                     <v-flex text-xs-center xs12>
                         <v-responsive>
                             <v-avatar size="150">
-                                <img src="https://pbs.twimg.com/profile_images/1092502563348467719/ZCtNeTLU_400x400.jpg" alt="">
+                                <img src="../../assets/me.jpeg" alt="">
                             </v-avatar>
                         </v-responsive>
                     </v-flex>
                     <v-flex text-xs-center xs12>
-                        <div class="logo">T<span class="logo--sub">hauã</span>B<span class="logo--sub">orges</span><span class="light-blue--text">.</span></div>
+                        <div class="logo">T<span class="logo--sub">hauã</span>B<span class="logo--sub">orges</span><span class="green--text">.</span></div>
                     </v-flex>
                 </v-layout>
             </v-container>
@@ -85,10 +95,11 @@ export default {
         margin-top: -18%; 
     }
     .me {
-        width: 765px;
+        width: 900px;
         height: auto;
-        margin-bottom: -100px;
-        margin-left: -100px;
+        top: -25px;
+        margin-bottom: -225px;
+        margin-left: -200px;
     }
     .mb__me {
         width: 20%;
@@ -125,7 +136,7 @@ export default {
     }
     
     .lake {
-        background: #00e5ff !important;
+        background: #00c86b !important;
         font-family: 'Nunito Sans', sans-serif;
         font-weight: 300;
     }
