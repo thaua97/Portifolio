@@ -21,7 +21,7 @@
                                     d-flex
                                 >
                                         <v-img
-                                            :src="require(`../../../public/img/tec/${item.id}.png`)"
+                                            :src="item.img"
                                             height="100%"
                                         >
                                             <v-layout
