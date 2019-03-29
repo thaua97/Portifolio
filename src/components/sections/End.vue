@@ -1,6 +1,6 @@
 <template>
     <span>
-        <footer>
+        <footer class="hidden-sm-and-down">
             <v-container fluid fill-height>
                 <v-layout row justify-center align-center>
                     <v-flex xs3>
@@ -50,7 +50,8 @@ export default {
 </script>
 <style scoped>
     footer {
-        background-image: linear-gradient(45deg, #210044d3, #000000bf), url('https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-image: linear-gradient(45deg, #210044d3, #000000bf), 
+        url('https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
         background-repeat: no-repeat;
         background-position: center;
         min-height: 200px;

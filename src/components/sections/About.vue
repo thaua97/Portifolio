@@ -2,12 +2,13 @@
     <span>
         <section>
             <v-container>
-                <v-layout wrap>
+                <v-layout justify-center align-center wrap>
                     <v-flex xs12 md6>
-                    <div class="title--about">Sobre Mim</div>
+                        <div class="title--about hidden-sm-and-down">Sobre Mim</div>
+                        <div class="mb--title__about hidden-md-and-up">Sobre Mim</div>
                     </v-flex>
                     <v-flex xs12 md6>
-                        <p class="text--about text-xs-left pa-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab praesentium, error quaerat provident sapiente esse dignissimos vitae voluptatem? Sequi quae quod eligendi deleniti libero qui animi expedita quis maxime minus!</p>
+                        <p class="text--about text-xs-left pa-4">Meu nome é Thauã Borges, sou natural de Pelotas, Rio Grande do Sul. Comecei na area da programação atraves de um sonhe de criança, desenvolver meus proprios jogos, sonho esse que ainda não abandonei mas acabei decobrindo uma nova paixão, o desenvimento web e mobile.</p>
                     </v-flex>
                 </v-layout>
             </v-container>
@@ -22,11 +23,18 @@ export default {
 <style scoped>
     section {
         background: #fdfdfddc;
+        width: 100%;
+        height: auto;
     }
 
     .title--about {
         font-family: 'Major Mono Display', monospace;
         font-size: 8rem;
+        color: #6a06ff;
+    }
+    .mb--title__about {
+        font-family: 'Major Mono Display', monospace;
+        font-size: 4rem;
         color: #6a06ff;
     }
     .text--about {

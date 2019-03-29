@@ -1,10 +1,12 @@
 <template>
-    <v-app>
-        <Banner />
-        <About />
-        <Projects />
-        <Technologies />
-        <End />
+    <v-app app>
+        <v-content app>
+            <Banner />
+            <About />
+            <Projects />
+            <Technologies />
+            <End />
+        </v-content>
     </v-app>
 </template>
 <script>

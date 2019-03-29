@@ -4,7 +4,9 @@
             <v-container>
                 <v-layout row wrap>
                     <v-flex xs12 md6>
-                        <div class="title--tech">Tecnol
+                        <div class="title--tech hidden-sm-and-down">Tecnol
+                            ogias</div>
+                        <div class="mb-title__tech hidde-md-and-up">Tecnol
                             ogias</div>
                             <p class="text--tech text-xs-left pa-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </v-flex>
@@ -59,6 +61,12 @@ export default {
     .title--tech {
         font-family: 'Major Mono Display', monospace;
         font-size: 8rem;
+        color: #6a06ff;
+    }
+
+    .mb-title__tech {
+        font-family: 'Major Mono Display', monospace;
+        font-size: 4rem;
         color: #6a06ff;
     }
 

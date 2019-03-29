@@ -3,6 +3,10 @@
         <section>
             <v-container fluid>
                 <v-layout wrap>
+                    <v-flex hidden-md-and-up xs12>
+                        <div class="mb-title__projects pr-4">Proj
+                            etos</div>
+                    </v-flex>
                     <v-flex xs12 md6>
                        <v-container grid-list-xl fluid>
                             <v-layout row wrap>
@@ -34,7 +38,7 @@
                             </v-layout>
                         </v-container>
                     </v-flex>
-                    <v-flex xs12 md6>
+                    <v-flex hidden-sm-and-down xs12 md6>
                         <div class="title--projects pr-4">Proj
                             etos</div>
                     </v-flex>
@@ -59,6 +63,12 @@ export default {
     .title--projects {
         font-family: 'Major Mono Display', monospace;
         font-size: 8rem;
+        color: #6a06ff;
+    }
+
+    .mb-title__projects {
+        font-family: 'Major Mono Display', monospace;
+        font-size: 4rem;
         color: #6a06ff;
     }
     .text--projects {
