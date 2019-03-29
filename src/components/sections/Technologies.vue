@@ -50,15 +50,15 @@ export default {
     data () {
         return {
             tec: [
-                { id: 1, name: 'node.png' },
-                { id: 2, name: 'react.png' },
-                { id: 3, name: 'vue.png' },
-                { id: 4, name: 'vuetify.png' },
-                { id: 5, name: 'uikit.png' },
-                { id: 6, name: 'bootstrap.png' },
-                { id: 7, name: 'materialize.png' },
-                { id: 8, name: 'mysql.png' },
-                { id: 9, name: 'laravel.png' },
+                { id: 1, img: 'https://i.imgur.com/G8Dnwj6.png' },
+                { id: 2, img: 'https://i.imgur.com/GtLOVfq.png' },
+                { id: 3, img: 'https://i.imgur.com/Mfnv59q.png' },
+                { id: 4, img: 'https://i.imgur.com/fK44Q18.png' },
+                { id: 5, img: 'https://i.imgur.com/mPH54Y1.png' },
+                { id: 6, img: 'https://i.imgur.com/jtfd5fb.png' },
+                { id: 7, img: 'https://i.imgur.com/ITyIA6T.png' },
+                { id: 8, img: 'https://i.imgur.com/2EzbsxB.png' },
+                { id: 9, img: 'https://i.imgur.com/PRSnXHz.png' },
             ]
         }
     }

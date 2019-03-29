@@ -18,7 +18,7 @@
                                 >
                                     <v-card elevation="9" flat tile class="d-flex">
                                         <v-img
-                                            :src="require(`../../../public/img/imgs/${item.id}.png`)"
+                                            :src="item.link"
                                             aspect-ratio="1"
                                             class="grey lighten-2"
                                         >
@@ -57,16 +57,12 @@ export default {
             projetos: [
                 {
                     id: 1,
-                    link: ''
+                    link: 'https://i.imgur.com/QVmQZ0r.png'
                 },
                 {
                     id: 2,
-                    link: ''
+                    link: 'https://i.imgur.com/DyRTqTh.png'
                 },
-                {
-                    id: 3,
-                    link: ''
-                }
             ]
         }
     }
