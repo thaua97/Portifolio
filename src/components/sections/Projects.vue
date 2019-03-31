@@ -3,18 +3,20 @@
         <section>
             <v-container fluid>
                 <v-layout wrap>
-                    <v-flex hidden-md-and-up xs12>
-                        <div class="mb-title__projects pr-4">Proj
-                            etos</div>
+                    <v-flex text-xs-center hidden-md-and-up xs12>
+                        <div class="mb-title__projects pr-4">Projetos</div>
                     </v-flex>
-                    <v-flex xs12 md6>
-                       <v-container grid-list-xl fluid>
-                            <v-layout row wrap>
+                    <v-flex text-xs-center align-center xs12 md6>
+                       <v-container grid-list-xl fluid fill-height>
+                            <v-layout align-center wrap>
                                 <v-flex
                                     v-for="item in projetos"
                                     :key="item.id"
+                                    offset-xs4
                                     xs4
                                     d-flex
+                                    text-xs-center
+                                    align-center
                                 >
                                     <v-card elevation="9" flat tile class="d-flex">
                                         <v-img

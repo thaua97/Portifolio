@@ -3,12 +3,11 @@
         <section>
             <v-container>
                 <v-layout row wrap>
-                    <v-flex xs12 md6>
+                    <v-flex text-xs-center xs12 md6>
                         <div class="title--tech hidden-sm-and-down">Tecnol
                             ogias</div>
-                        <div class="mb-title__tech hidden-md-and-up">Tecnol
-                            ogias</div>
-                            <p class="text--tech text-xs-left pa-4">Estas são as tecnologias que estou utilizando no momento.</p>
+                        <div class="mb-title__tech hidden-md-and-up">Tecnologias</div>
+                        <p class="text--tech text-xs-left pa-4">Estas são as tecnologias que estou utilizando no momento.</p>
                     </v-flex>
                     <v-flex xs12 md6>
                         

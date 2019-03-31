@@ -29,14 +29,14 @@
                 <v-container fill-height>
                     <v-layout justify-center align-center wrap>
                         <v-flex xs12 md7>
-                           <v-avatar size="150">
+                           <v-avatar size="350">
                                 <img src="https://i.imgur.com/u8JLa3E.jpg" alt="">
                             </v-avatar>
                         </v-flex>
                          <v-flex xs12 md5>
                             <div class="custom--subtitle pr-5">Thauã</div>
                             <div class="custom--title mt--1">Borges</div>
-                            <div class="custom--legend green--text">Desenvolvedor FullSteck</div>
+                            <div class="custom--legend green--text">Desenvolvedor Front-end</div>
                         </v-flex>
                     </v-layout>
                 </v-container>
@@ -115,17 +115,16 @@ export default {
 
     .custom--title {
         font-family: 'Nunito Sans', sans-serif;
-        font-weight: 200;
-        font-size: 11rem;
+        font-weight: 100;
+        font-size: 10rem;
         color: #000000;
         margin-bottom: 10px;
     }
 
     .custom--subtitle {
         font-family: 'Nunito Sans', sans-serif;
-        margin-left: -26%;
         font-weight: 700;
-        font-size: 7rem;
+        font-size: 6rem;
         color: #000000;
     }
     .custom--legend {
