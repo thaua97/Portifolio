@@ -18,23 +18,25 @@
                                     text-xs-center
                                     align-center
                                 >
-                                    <v-card elevation="9" flat tile class="d-flex">
-                                        <v-img
-                                            :src="item.link"
-                                            aspect-ratio="1"
-                                            class="grey lighten-2"
-                                        >
-                                            <v-layout
-                                                slot="placeholder"
-                                                fill-height
-                                                align-center
-                                                justify-center
-                                                ma-0
+                                    <a :href="item.url" target="_blank">
+                                        <v-card elevation="9" flat tile class="d-flex">
+                                            <v-img
+                                                :src="item.link"
+                                                aspect-ratio="1"
+                                                class="grey lighten-2"
                                             >
-                                                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                                            </v-layout>
-                                        </v-img>
-                                    </v-card>
+                                                <v-layout
+                                                    slot="placeholder"
+                                                    fill-height
+                                                    align-center
+                                                    justify-center
+                                                    ma-0
+                                                >
+                                                    <v-progress-circular indeterminate color="grey lighten-5"/>
+                                                </v-layout>
+                                            </v-img>
+                                        </v-card>
+                                    </a>
                                 </v-flex>
                             </v-layout>
                         </v-container>
@@ -59,12 +61,19 @@ export default {
             projetos: [
                 {
                     id: 1,
-                    link: 'https://i.imgur.com/QVmQZ0r.png'
+                    link: 'https://i.imgur.com/QVmQZ0r.png',
+                    url: 'http://wk.suportepratica.com.br/'
                 },
                 {
-                    id: 2,
-                    link: 'https://i.imgur.com/DyRTqTh.png'
+                   id: 2,
+                   link: 'https://i.imgur.com/MMMYAJi.png',
+                   url: 'https://thaua97.github.io/space'
                 },
+                {
+                   id: 3,
+                   link: 'https://i.imgur.com/a92klbh.png',
+                   url: 'https://crowbox.herokuapp.com'
+                } 
             ]
         }
     }
@@ -72,7 +81,8 @@ export default {
 </script>
 <style scoped>
     section {
-        background-image: -webkit-linear-gradient(135deg, #fbfbfbb4 50%, #fbfbfbb4 50%), url('https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-image: -webkit-linear-gradient(135deg, #fbfbfbb4 50%, #fbfbfbb4 50%), 
+        url('https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
     }
 
     .title--projects {
