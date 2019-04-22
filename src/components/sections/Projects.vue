@@ -7,12 +7,11 @@
                         <div class="mb-title__projects pr-4">Projetos</div>
                     </v-flex>
                     <v-flex text-xs-center align-center xs12 md6>
-                       <v-container grid-list-xl fluid fill-height>
-                            <v-layout align-center wrap>
-                                <v-flex
+                        <v-container grid-list-xl fluid>
+                            <v-layout row wrap>
+                                <v-flex    
                                     v-for="item in projetos"
                                     :key="item.id"
-                                    offset-xs4
                                     xs4
                                     d-flex
                                     text-xs-center
@@ -71,10 +70,11 @@ export default {
                 },
                 {
                    id: 3,
-                   link: 'https://i.imgur.com/a92klbh.png',
+                   link: 'https://i.imgur.com/W6sGccs.png',
                    url: 'https://crowbox.herokuapp.com'
                 } 
             ]
+
         }
     }
 }
@@ -89,11 +89,12 @@ export default {
         font-family: 'Major Mono Display', monospace;
         font-size: 8rem;
         color: #6a06ff;
+        margin-left: 20%;
     }
 
     .mb-title__projects {
         font-family: 'Major Mono Display', monospace;
-        font-size: 4rem;
+        font-size: 2.5rem;
         color: #6a06ff;
     }
     .text--projects {

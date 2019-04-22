@@ -86,4 +86,25 @@ export default {
         font-size: 2rem;
         color: #00b66d;
     }
+
+    @media screen and (max-width: 600px) {
+        .title--tech {
+            font-family: 'Major Mono Display', monospace;
+            font-size: 3rem;
+            color: #6a06ff;
+        }
+
+        .mb-title__tech {
+            font-family: 'Major Mono Display', monospace;
+            font-size: 2.5rem;
+            color: #6a06ff;
+        }
+
+        .text--tech {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 2rem;
+            color: #00b66d;
+        }
+    }
+
 </style>
